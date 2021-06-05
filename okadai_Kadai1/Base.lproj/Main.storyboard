@@ -52,6 +52,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D44-c0-luY">
                                 <rect key="frame" x="47" y="284" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedSumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EnD-2J-w3n"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze2-Zd-93j">
                                 <rect key="frame" x="20" y="324" width="41.5" height="20.5"/>
@@ -72,13 +75,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="fifthTextField" destination="bbC-HA-bjv" id="z3u-ha-AMQ"/>
-                        <outlet property="firstTextField" destination="i7q-ar-ZnX" id="CdW-BR-f2M"/>
-                        <outlet property="fourthTextField" destination="gfQ-6U-POn" id="rAo-j8-2Na"/>
                         <outlet property="resultLabel" destination="Ze2-Zd-93j" id="Wdh-zU-sYd"/>
-                        <outlet property="secondTextField" destination="dP9-Pp-myd" id="Sfl-0c-kce"/>
                         <outlet property="sumButton" destination="D44-c0-luY" id="bqn-oZ-kie"/>
-                        <outlet property="thirdTextField" destination="qV2-on-H44" id="whn-Wb-s7p"/>
+                        <outletCollection property="numberTextFields" destination="i7q-ar-ZnX" collectionClass="NSMutableArray" id="dxJ-dm-GTg"/>
+                        <outletCollection property="numberTextFields" destination="dP9-Pp-myd" collectionClass="NSMutableArray" id="mgW-0B-2nf"/>
+                        <outletCollection property="numberTextFields" destination="qV2-on-H44" collectionClass="NSMutableArray" id="oC6-92-rYa"/>
+                        <outletCollection property="numberTextFields" destination="gfQ-6U-POn" collectionClass="NSMutableArray" id="14Q-ui-WzA"/>
+                        <outletCollection property="numberTextFields" destination="bbC-HA-bjv" collectionClass="NSMutableArray" id="5gc-Jn-Y7H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
